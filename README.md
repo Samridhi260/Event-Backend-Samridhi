@@ -11,9 +11,9 @@ This project implements a complete event-driven backend system using FastAPI, Fi
 | Authentication | Firebase Auth (JWT ID tokens) used for protected endpoints |  Done |
 | Event API | POST /events/ (Create) and GET /events/ (List user events) |  Done |
 | Event-driven Cloud Function | onEventCreate trigger updates analytics automatically |  Done |
-| Analytics Endpoint | /analytics/me returns total events per user |  Done |
-| Scheduled Notifications | nightlySummary and manual HTTP function runNotificationJobNow |  Done |
-| WebSocket Updates | Real-time event notifications to connected clients |  Done |
+| Analytics Endpoint | /analytics/me returns total events per user |  Done(Bonus) |
+| Scheduled Notifications | nightlySummary and manual HTTP function runNotificationJobNow |  Done(Bonus) |
+| WebSocket Updates | Real-time event notifications to connected clients |  Done(Bonus) |
 
 ---
 
