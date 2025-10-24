@@ -1,0 +1,161 @@
+{
+	"info": {
+		"_postman_id": "9122b73c-02a8-4536-9faf-aba9f513f8d3",
+		"name": "Event API (Local)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49530793",
+		"_collection_link": "https://samridhi81024-8367751.postman.co/workspace/EVENT-BACKEND~dbdeb22e-f498-4795-a1a6-f5acc756bfeb/collection/49530793-9122b73c-02a8-4536-9faf-aba9f513f8d3?action=share&source=collection_link&creator=49530793"
+	},
+	"item": [
+		{
+			"name": "POST/Create Event",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"title\": \"event from postman\", \"description\": \"created via Postman\" }\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/events/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"events",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET/List Event",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"title\": \"event from postman\", \"description\": \"created via Postman\" }\r\n"
+				},
+				"url": {
+					"raw": "{{base_url}}/events/",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"events",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Run Notification Job Now",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"title\": \"event from postman\", \"description\": \"created via Postman\" }\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:5001/event1234-701af/us-central1/runNotificationJobNow",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5001",
+					"path": [
+						"event1234-701af",
+						"us-central1",
+						"runNotificationJobNow"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET My Analytics",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJub25lIiwidHlwIjoiSldUIn0.eyJlbWFpbCI6InRlc3R1c2VyQGV4YW1wbGUuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJhdXRoX3RpbWUiOjE3NjEzMjAyMzIsInVzZXJfaWQiOiIzdVJRQnhxZGlxbHBLMnV3Z1JMd0ZMdDdnb3dZIiwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJ0ZXN0dXNlckBleGFtcGxlLmNvbSJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn0sImlhdCI6MTc2MTMyMDIzMiwiZXhwIjoxNzYxMzIzODMyLCJhdWQiOiJldmVudDEyMzQtNzAxYWYiLCJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZXZlbnQxMjM0LTcwMWFmIiwic3ViIjoiM3VSUUJ4cWRpcWxwSzJ1d2dSTHdGTHQ3Z293WSJ9.",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": ""
+		},
+		{
+			"key": "id_token",
+			"value": ""
+		}
+	]
+}
