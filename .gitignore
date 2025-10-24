@@ -1,0 +1,1 @@
+printf "firebase-service-account.json\n.venv/\n__pycache__/\n.env\n" > .gitignore 
