@@ -241,8 +241,14 @@ Connect via browser console:
 | GET My Analytics | GET | {{base_url}}/analytics/me | Analytics per user |
 | GET Run Notification Job Now | GET | http://localhost:5001/event1234-701af/us-central1/runNotificationJobNow | Trigger notifications manually |
 
-Export as:  
-**Event_API_Local.postman_collection.json** → place in project root.
+##  Deliverable (Postman)  
+
+Postman/Event API (Local).postman_collection.json
+
+##  Author
+
+*Samridhi*    
+samridhi10043@gmail.com
 
 ### Summary
 
