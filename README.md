@@ -50,9 +50,9 @@ FastAPI → Firestore (Emulator)
 
 ---
 
-### 2️. Clone or Unzip Project
 
-# 1. Clone the repository
+### 2. Clone the repository
+```
 git clone https://github.com/Samridhi260/Event-Backend.git
 ```
 
@@ -71,7 +71,7 @@ python -m venv .venv
 
 ```bash
 pip install fastapi "uvicorn[standard]" google-cloud-firestore google-auth
-# Or use pip install -r requirements.txt if provided.
+# Or use pip install -r requirements.txt
 ```
 
 ---
